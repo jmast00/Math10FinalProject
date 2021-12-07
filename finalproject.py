@@ -132,6 +132,8 @@ st.write(linear_regression_chart+chart1)
 st.subheader('Thank you for an amazing quarter of math 10! :)')
 
 #added sidebar element for references
+st.sidebar.write('**GITHUB REPO**')
+st.sidebar.markdown('https://github.com/jmast00/Math10FinalProject')
 st.sidebar.write('**REFERENCES**')
 st.sidebar.write('datetotime portion was taken from https://stackoverflow.com/questions/46658232/pandas-convert-column-with-year-integer-to-datetime')
 st.sidebar.write('interactive artist search was based on https://stackoverflow.com/questions/58351458/how-to-extract-entire-rows-from-pandas-data-frame-if-a-columns-string-value-co')
