@@ -129,16 +129,15 @@ st.write('we can see a positive linear regression regarding the songs'
 
 st.write(linear_regression_chart+chart1)
 
-st.subheader('Thank you for an amazing quarter of math 10! :)')
 
 #added sidebar element for references
 st.sidebar.write('**GITHUB REPO**')
 st.sidebar.markdown('https://github.com/jmast00/Math10FinalProject')
 st.sidebar.write('**REFERENCES**')
-st.sidebar.write('datetotime portion was taken from https://stackoverflow.com/questions/46658232/pandas-convert-column-with-year-integer-to-datetime')
+st.sidebar.write('datetotime portion https://stackoverflow.com/questions/46658232/pandas-convert-column-with-year-integer-to-datetime')
 st.sidebar.write('interactive artist search was based on https://stackoverflow.com/questions/58351458/how-to-extract-entire-rows-from-pandas-data-frame-if-a-columns-string-value-co')
 st.sidebar.write('reassigning the labels on the artist table was helped with https://github.com/streamlit/streamlit/issues/641')
-st.sidebar.write('a lot of the code was taken from this class github notes https://christopherdavisuci.github.io/UCI-Math-10/Week5/Week5-Wednesday.html')
+st.sidebar.write('a lot of the code was inspired by the class github notes https://christopherdavisuci.github.io/UCI-Math-10/Week5/Week5-Wednesday.html')
 st.sidebar.write('the following two links helped with charting and visual elements https://altair-viz.github.io/gallery/scatter_tooltips.html')
 st.sidebar.write('https://altair-viz.github.io/gallery/simple_line_chart.html')
 
