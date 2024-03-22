@@ -3,8 +3,8 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import altair as alt
-import sklearn.linear_model
-#from sklearn.linear_model import LinearRegression
+import sklearn
+from sklearn.linear_model import LinearRegression
 
 
 st.title('Exploring Top Charts 2010-2019')
