@@ -3,7 +3,8 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import altair as alt
-import sklearn
+from sklearn import linear_model
+#import sklearn
 #from sklearn.linear_model import LinearRegression
 
 
@@ -46,7 +47,7 @@ st.table(artist_array.assign(hack='').set_index('hack'))
 
 st.header('Now We Graph Our Data')
 
-st.write('Go ahead and play with the inputs, try graphing bpm by nrgy or dnce by val')
+st.write('Go ahead and play with the values, try graphing bpm by nrgy or dnce by val')
 
 df_numeric = pd.DataFrame(df.iloc[:,-12:-1])
 y_axis = st.selectbox('choose Y axis',list(df_numeric.columns))
@@ -91,7 +92,7 @@ st.write("I don't know about you, but I see a positive correlation between"
 st.write("We start by fitting the linear regression. I want to see the "
          "y-intercept and the slope!")
 
-reg = LinearRegression().fit(X, y)
+reg = linear_model.LinearRegression()
 X = np.array(df['year']).reshape(-1,1)
 y = np.array(df['pop']).reshape(-1,1)
 reg.fit(X,y)
