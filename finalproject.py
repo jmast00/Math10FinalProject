@@ -90,7 +90,7 @@ st.write("We start by fitting the linear regression. I want to see the"
          "y-intercept and the slope!")
 
 reg = sklearn.LinearRegression()
-X = np.array(df['year']).reshape(-1,1)
+x = np.array(df['year']).reshape(-1,1)
 y = np.array(df['pop']).reshape(-1,1)
 reg.fit(X,y)
 reg_coef = float(reg.coef_)
