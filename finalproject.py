@@ -46,6 +46,8 @@ st.table(artist_array.assign(hack='').set_index('hack'))
 
 st.header('Now We Graph Our Data')
 
+st.subheader('Go ahead and play with the inputs, try graphing bpm by nrgy')
+
 df_numeric = pd.DataFrame(df.iloc[:,-12:-1])
 y_axis = st.selectbox('choose Y axis',list(df_numeric.columns))
 x_axis = st.selectbox('choose X axis',list(df_numeric.columns))
