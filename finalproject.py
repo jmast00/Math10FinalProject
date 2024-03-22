@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 import sklearn
-#from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression
 
 
 st.title('Exploring Top Charts 2010-2019')
@@ -91,12 +91,12 @@ st.write("I don't know about you, but I see a positive correlation between"
 st.write("We start by fitting the linear regression. I want to see the"
          "y-intercept and the slope!")
 
-#reg = LinearRegression()
-#X = np.array(df['year']).reshape(-1,1)
-#y = np.array(df['pop']).reshape(-1,1)
-#reg.fit(X,y)
-#reg_coef = float(reg.coef_)
-#reg_int = float(reg.intercept_)
+reg = LinearRegression().fit(X, y)
+X = np.array(df['year']).reshape(-1,1)
+y = np.array(df['pop']).reshape(-1,1)
+reg.fit(X,y)
+reg_coef = float(reg.coef_)
+reg_int = float(reg.intercept_)
     #https://christopherdavisuci.github.io/UCI-Math-10/Week5/Week5-Wednesday.html
     
 
