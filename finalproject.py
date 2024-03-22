@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import altair as alt
-import sklearn
+import sklearn.linear_model
 #from sklearn.linear_model import LinearRegression
 
 
@@ -88,7 +88,7 @@ st.write("I don't know about you, but I see a positive correlation between"
 
 
     #linear regression
-st.write("We start by fitting the linear regression. I want to see the"
+st.write("We start by fitting the linear regression. I want to see the "
          "y-intercept and the slope!")
 
 reg = LinearRegression().fit(X, y)
