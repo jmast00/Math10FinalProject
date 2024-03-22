@@ -46,7 +46,7 @@ st.table(artist_array.assign(hack='').set_index('hack'))
 
 st.header('Now We Graph Our Data')
 
-st.write('Go ahead and play with the inputs, try graphing bpm by nrgy')
+st.write('Go ahead and play with the inputs, try graphing bpm by nrgy or dnce by val')
 
 df_numeric = pd.DataFrame(df.iloc[:,-12:-1])
 y_axis = st.selectbox('choose Y axis',list(df_numeric.columns))
@@ -91,12 +91,12 @@ st.write("I don't know about you, but I see a positive correlation between"
 st.write("We start by fitting the linear regression. I want to see the"
          "y-intercept and the slope!")
 
-reg = LinearRegression()
-X = np.array(df['year']).reshape(-1,1)
-y = np.array(df['pop']).reshape(-1,1)
-reg.fit(X,y)
-reg_coef = float(reg.coef_)
-reg_int = float(reg.intercept_)
+#reg = LinearRegression()
+#X = np.array(df['year']).reshape(-1,1)
+#y = np.array(df['pop']).reshape(-1,1)
+#reg.fit(X,y)
+#reg_coef = float(reg.coef_)
+#reg_int = float(reg.intercept_)
     #https://christopherdavisuci.github.io/UCI-Math-10/Week5/Week5-Wednesday.html
     
 
