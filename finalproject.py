@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import altair as alt
-from sklearn import linear_model
+##from sklearn import linear_model
 #import sklearn
 #from sklearn.linear_model import LinearRegression
 
